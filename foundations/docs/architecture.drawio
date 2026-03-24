@@ -1,0 +1,158 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+
+    <!-- Title -->
+    <mxCell id="title" value="App Hub Foundation — Architecture" style="text;html=1;fontSize=20;fontStyle=1;align=center;fillColor=none;strokeColor=none;fontColor=#1a1a2e;" vertex="1" parent="1">
+      <mxGeometry x="120" y="10" width="560" height="30" as="geometry"/>
+    </mxCell>
+
+    <!-- GCP Organization Box -->
+    <mxCell id="org" value="🏢 GCP Organization" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8eaf6;strokeColor=#3949ab;fontStyle=1;fontSize=13;verticalAlign=top;align=left;spacingLeft=10;spacingTop=5;arcSize=8;" vertex="1" parent="1">
+      <mxGeometry x="20" y="50" width="760" height="530" as="geometry"/>
+    </mxCell>
+
+    <!-- Management Project (Hub) -->
+    <mxCell id="hub" value="&lt;b&gt;santoai-dev&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:10px;color:#666'&gt;Management Project (HUB)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#e65100;fontSize=11;verticalAlign=top;align=center;spacingTop=8;arcSize=12;shadow=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="90" width="200" height="200" as="geometry"/>
+    </mxCell>
+
+    <!-- Hub internal items -->
+    <mxCell id="hub_apis" value="📦 11 APIs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#ff9800;fontSize=10;align=center;" vertex="1" parent="1">
+      <mxGeometry x="55" y="150" width="80" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="hub_apphub" value="🔗 App Hub" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#ff9800;fontSize=10;align=center;" vertex="1" parent="1">
+      <mxGeometry x="145" y="150" width="80" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="hub_iam" value="🔐 IAM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#ff9800;fontSize=10;align=center;" vertex="1" parent="1">
+      <mxGeometry x="55" y="195" width="80" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="hub_billing" value="💳 Billing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#ff9800;fontSize=10;align=center;" vertex="1" parent="1">
+      <mxGeometry x="145" y="195" width="80" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="hub_apps" value="📱 Applications&lt;br&gt;&lt;font style='font-size:9px'&gt;(Projeto X)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#ff9800;fontSize=10;align=center;" vertex="1" parent="1">
+      <mxGeometry x="80" y="240" width="120" height="35" as="geometry"/>
+    </mxCell>
+
+    <!-- Root Folder (App-Enabled) -->
+    <mxCell id="root_folder" value="📁 projeto/ &lt;font style='color:#1565c0;font-size:10px'&gt;(App-Enabled Folder = BOUNDARY)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;fontStyle=1;fontSize=12;verticalAlign=top;align=left;spacingLeft=10;spacingTop=5;arcSize=8;shadow=1;" vertex="1" parent="1">
+      <mxGeometry x="280" y="90" width="480" height="480" as="geometry"/>
+    </mxCell>
+
+    <!-- CICD Folder -->
+    <mxCell id="folder_cicd" value="📁 cicd/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#7b1fa2;fontStyle=1;fontSize=11;verticalAlign=top;align=center;spacingTop=5;arcSize=10;" vertex="1" parent="1">
+      <mxGeometry x="300" y="130" width="210" height="90" as="geometry"/>
+    </mxCell>
+    <mxCell id="proj_cicd" value="⚙️ projeto-x-cicd&lt;br&gt;&lt;font style='font-size:9px;color:#666'&gt;(spoke project)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#9c27b0;fontSize=10;align=center;shadow=1;" vertex="1" parent="1">
+      <mxGeometry x="325" y="170" width="160" height="35" as="geometry"/>
+    </mxCell>
+
+    <!-- DEV Folder -->
+    <mxCell id="folder_dev" value="📁 dev/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#2e7d32;fontStyle=1;fontSize=11;verticalAlign=top;align=center;spacingTop=5;arcSize=10;" vertex="1" parent="1">
+      <mxGeometry x="530" y="130" width="210" height="90" as="geometry"/>
+    </mxCell>
+    <mxCell id="proj_dev" value="🧪 projeto-x-dev&lt;br&gt;&lt;font style='font-size:9px;color:#666'&gt;(spoke project)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#43a047;fontSize=10;align=center;shadow=1;" vertex="1" parent="1">
+      <mxGeometry x="555" y="170" width="160" height="35" as="geometry"/>
+    </mxCell>
+
+    <!-- HML Folder -->
+    <mxCell id="folder_hml" value="📁 homologacao/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#f9a825;fontStyle=1;fontSize=11;verticalAlign=top;align=center;spacingTop=5;arcSize=10;" vertex="1" parent="1">
+      <mxGeometry x="300" y="240" width="210" height="90" as="geometry"/>
+    </mxCell>
+    <mxCell id="proj_hml" value="🔍 projeto-x-hml&lt;br&gt;&lt;font style='font-size:9px;color:#666'&gt;(spoke project)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9c4;strokeColor=#fbc02d;fontSize=10;align=center;shadow=1;" vertex="1" parent="1">
+      <mxGeometry x="325" y="280" width="160" height="35" as="geometry"/>
+    </mxCell>
+
+    <!-- PROD Folder -->
+    <mxCell id="folder_prod" value="📁 producao/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffebee;strokeColor=#c62828;fontStyle=1;fontSize=11;verticalAlign=top;align=center;spacingTop=5;arcSize=10;" vertex="1" parent="1">
+      <mxGeometry x="530" y="240" width="210" height="90" as="geometry"/>
+    </mxCell>
+    <mxCell id="proj_prod" value="🚀 projeto-x-prd&lt;br&gt;&lt;font style='font-size:9px;color:#666'&gt;(spoke project)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcdd2;strokeColor=#e53935;fontSize=10;align=center;shadow=1;" vertex="1" parent="1">
+      <mxGeometry x="555" y="280" width="160" height="35" as="geometry"/>
+    </mxCell>
+
+    <!-- IAM Groups Section -->
+    <mxCell id="iam_section" value="🔐 Folder Access Groups" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#ad1457;fontStyle=1;fontSize=11;verticalAlign=top;align=center;spacingTop=5;arcSize=10;" vertex="1" parent="1">
+      <mxGeometry x="300" y="355" width="440" height="95" as="geometry"/>
+    </mxCell>
+    <mxCell id="iam_dev" value="👥 desenvolvimento@&lt;br&gt;→ dev/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8bbd0;strokeColor=#c2185b;fontSize=9;align=center;" vertex="1" parent="1">
+      <mxGeometry x="310" y="385" width="100" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="iam_devops" value="👥 devops@&lt;br&gt;→ ALL folders" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8bbd0;strokeColor=#c2185b;fontSize=9;align=center;" vertex="1" parent="1">
+      <mxGeometry x="420" y="385" width="100" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="iam_sre" value="👥 sre@&lt;br&gt;→ producao/ (viewer)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8bbd0;strokeColor=#c2185b;fontSize=9;align=center;" vertex="1" parent="1">
+      <mxGeometry x="530" y="385" width="110" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="iam_hml" value="👥 homologacao@&lt;br&gt;→ homologacao/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8bbd0;strokeColor=#c2185b;fontSize=9;align=center;" vertex="1" parent="1">
+      <mxGeometry x="648" y="385" width="85" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- Terraform Modules Section -->
+    <mxCell id="tf_section" value="⚡ Terraform Modules (Execution Order)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eceff1;strokeColor=#546e7a;fontStyle=1;fontSize=11;verticalAlign=top;align=center;spacingTop=5;arcSize=10;" vertex="1" parent="1">
+      <mxGeometry x="300" y="470" width="440" height="85" as="geometry"/>
+    </mxCell>
+    <mxCell id="mod1" value="project" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0bec5;strokeColor=#37474f;fontSize=9;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="310" y="500" width="55" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="mod2" value="folders" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0bec5;strokeColor=#37474f;fontSize=9;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="374" y="500" width="55" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="mod3" value="apis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0bec5;strokeColor=#37474f;fontSize=9;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="438" y="500" width="55" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="mod4" value="env_proj" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0bec5;strokeColor=#37474f;fontSize=9;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="502" y="500" width="55" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="mod5" value="apphub" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0bec5;strokeColor=#37474f;fontSize=9;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="566" y="500" width="50" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="mod6" value="iam" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0bec5;strokeColor=#37474f;fontSize=9;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="625" y="500" width="45" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="mod7" value="spokes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0bec5;strokeColor=#37474f;fontSize=9;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="679" y="500" width="50" height="30" as="geometry"/>
+    </mxCell>
+
+    <!-- Arrows between modules -->
+    <mxCell id="arr1" style="endArrow=classic;strokeColor=#546e7a;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mod1" target="mod2">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="arr2" style="endArrow=classic;strokeColor=#546e7a;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mod2" target="mod3">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="arr3" style="endArrow=classic;strokeColor=#546e7a;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mod3" target="mod4">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="arr4" style="endArrow=classic;strokeColor=#546e7a;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mod4" target="mod5">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="arr5" style="endArrow=classic;strokeColor=#546e7a;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mod5" target="mod6">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="arr6" style="endArrow=classic;strokeColor=#546e7a;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mod6" target="mod7">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- Hub to Spokes connection arrows -->
+    <mxCell id="spoke_arr1" style="endArrow=classic;dashed=1;strokeColor=#e65100;strokeWidth=2;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="hub" target="proj_cicd">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="spoke_arr2" style="endArrow=classic;dashed=1;strokeColor=#e65100;strokeWidth=2;exitX=1;exitY=0.35;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="hub" target="proj_dev">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="spoke_arr3" style="endArrow=classic;dashed=1;strokeColor=#e65100;strokeWidth=2;exitX=1;exitY=0.65;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="hub" target="proj_hml">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="spoke_arr4" style="endArrow=classic;dashed=1;strokeColor=#e65100;strokeWidth=2;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="hub" target="proj_prod">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- Legend label -->
+    <mxCell id="legend_label" value="&lt;font style='font-size:9px;color:#888'&gt;- - - → Hub-Spoke attachment (App Hub manages spoke resources)&lt;/font&gt;" style="text;html=1;fillColor=none;strokeColor=none;align=left;" vertex="1" parent="1">
+      <mxGeometry x="40" y="310" width="220" height="20" as="geometry"/>
+    </mxCell>
+
+  </root>
+</mxGraphModel>

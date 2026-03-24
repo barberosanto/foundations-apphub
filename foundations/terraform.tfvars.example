@@ -1,0 +1,100 @@
+# =============================================================================
+# Example values — copy to terraform.tfvars and adjust
+# =============================================================================
+
+# ----- Bootstrap (org zerada) -----
+org_id          = "000000000000"         # gcloud organizations list
+billing_account = "XXXXXX-XXXXXX-XXXXXX" # gcloud billing accounts list
+project_id      = "your-management-project-id"
+project_name    = "App Management Hub"
+region          = "us-east1"
+
+# ----- Folder Hierarchy -----
+root_folder_name = "company-name"
+
+environments = {
+  "cicd"        = "cicd"
+  "dev"         = "dev"
+  "homologacao" = "homologacao"
+  "producao"    = "producao"
+}
+
+# ----- Spoke Projects (created inside folders) -----
+env_projects = {
+  "project-x-cicd" = {
+    project_id   = "company-x-cicd"
+    display_name = "Project X - CICD"
+    folder_key   = "cicd"
+    activate_apis = [
+      "serviceusage.googleapis.com",
+      "storage.googleapis.com",
+      "iam.googleapis.com",
+      "compute.googleapis.com",
+      "monitoring.googleapis.com",
+      "cloudbilling.googleapis.com",
+      "cloudresourcemanager.googleapis.com",
+      # Add more APIs as needed
+    ]
+  }
+  "project-x-dev" = {
+    project_id   = "company-x-dev"
+    display_name = "Project X - Development"
+    folder_key   = "dev"
+    activate_apis = [
+      "serviceusage.googleapis.com",
+      "storage.googleapis.com",
+      "iam.googleapis.com",
+      "compute.googleapis.com",
+      # Add more APIs as needed
+    ]
+  }
+}
+
+# ----- Extra Spokes (existing projects, not created by Terraform) -----
+extra_service_projects = {}
+
+# ----- App Hub Roles (project-level) -----
+app_hub_admins = [
+  "user:admin@example.com",
+]
+
+app_hub_editors = []
+
+app_hub_viewers = []
+
+# ----- Design Center Roles (project-level) -----
+design_center_admins = [
+  "user:admin@example.com",
+]
+
+design_center_users = []
+
+# ----- Folder Access Groups -----
+# folder_access_groups = {
+#   "dev-team" = {
+#     member  = "group:dev-team@example.com"
+#     role    = "roles/editor"
+#     folders = ["dev"]
+#   }
+# }
+folder_access_groups = {}
+
+# ----- Applications -----
+applications = {
+  "project-x" = {
+    display_name = "Project X"
+    criticality  = "HIGH"
+    environment  = "DEVELOPMENT"
+  }
+}
+
+# ----- Design Center Spaces (created via gcloud local-exec) -----
+design_center_spaces = {
+  "company-platform" = {
+    display_name = "Platform Architecture Space"
+  }
+}
+
+# ----- DevOps Service Account -----
+devops_sa_name         = "sa-devops"
+devops_sa_display_name = "DevOps Deploy SA"
