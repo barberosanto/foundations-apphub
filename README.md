@@ -10,8 +10,8 @@ Quando organizações crescem no GCP, elas precisam de uma forma padronizada de 
 
 Para suportar isso, este Terraform cria uma topologia "hub-and-spoke" focada no modelo de **Management Project**.
 
-![Visão Geral da Arquitetura](docs/architecture.png)
-*(Versões editáveis disponíveis em `docs/architecture.drawio` e `docs/architecture.svg`)*
+![Visão Geral da Arquitetura](foundations/docs/architecture.png)
+*(Versões editáveis disponíveis em `foundations/docs/architecture.drawio` e `foundations/docs/architecture.svg`)*
 
 ### Topologia Criada:
 ```text
