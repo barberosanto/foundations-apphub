@@ -6,8 +6,8 @@ Este tutorial vai te guiar pela arquitetura, conceitos e pelo passo a passo de c
 
 Para entendermos o que estamos construindo, dê uma olhada no desenho arquitetural desta fundação.
 
-![Visão Geral da Arquitetura](docs/architecture.png)
-*(Você também pode visualizar as versões em [Draw.io](docs/architecture.drawio) ou [SVG](docs/architecture.svg) na pasta `docs/` do repositório).*
+![Visão Geral da Arquitetura](foundations/docs/architecture.png)
+*(Você também pode visualizar as versões em [Draw.io](foundations/docs/architecture.drawio) ou [SVG](foundations/docs/architecture.svg) na pasta `foundations/docs/` do repositório).*
 
 Quando organizações crescem no GCP, elas precisam de uma forma padronizada de gerenciar projetos, permissões e, o mais importante: **Aplicações**. 
 
